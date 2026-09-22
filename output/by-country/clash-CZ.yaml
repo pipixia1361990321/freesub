@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  tls: true
+  servername: fornewiran.ade-1000.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/yLWNcuUuw1jlJpkDhGy
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
+  tls: true
+  servername: bpb-4dc4958b.hxjkcghchv.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.182.94.186
   port: 443
   udp: true
@@ -16,18 +46,6 @@ proxies:
     public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
   servername: us04.mcloud.mov
   client-fingerprint: safari
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 95.85.230.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: de.oblaco.bet
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +53,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +61,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
