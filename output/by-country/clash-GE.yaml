@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
-  server: 45.9.168.211
-  port: 443
+- name: 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  server: 185.143.179.179
+  port: 25026
   udp: true
   type: vless
-  uuid: 7de5e70d-b95e-4019-affb-636151647b52
+  uuid: 441a29b2-d9aa-47d5-9209-0a9191479f9f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
-  servername: mzone.hu.3cloudhost.com
+    public-key: RVh0D446O5pKnOqlNkJNxSGGbmzl8swn4YBXYce1HSw
+    short-id: 34c465417d7ebca0
+  servername: www.google.com
   client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01 - xiaohe
+  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
