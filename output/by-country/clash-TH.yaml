@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.10.185
+  server: 104.16.111.193
   port: 443
   udp: true
   type: vless
@@ -32,14 +32,13 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: 103.107.52.106
+  server: pphfree2.mvpnpvpn.de5.net
   port: 52351
   udp: true
   type: ss
